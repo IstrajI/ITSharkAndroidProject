@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 
+import com.example.android.itsharkandroidproject.ui.main.MainActivity;
+
 public class StartActivity extends AppCompatActivity {
 
     private final static int DELAY = 1000;
