@@ -178,14 +178,20 @@
 #### Часть 2
 
 1. Для удобной работы с сервером, используем библиотеку `GSON` для парсинга `json`'а и `OkHTTP` для отправки и получения запроса. Добавим необходимые зависимости в build.gradle. И сразу добавим в манифест файл пермишен на доступ к интернету.
-LTKM: [Permissions](https://developer.android.com/guide/topics/permissions/requesting.html)
-LTKM: [GSON](https://github.com/google/gson)
-LTKM: [OkHTTP](http://square.github.io/okhttp/)
+
+**WKM**: [Permissions](https://developer.android.com/guide/topics/permissions/requesting.html)
+
+**WKM**: [GSON](https://github.com/google/gson)
+
+**WKM**: [OkHTTP](http://square.github.io/okhttp/)
 
 2. Воспользуемся классом `AsyncTask` для асинхронной работы с сервером. Создадим его наследника - класс `LoadCitiesTask` с параметрами класса - <Void, Void, List<ListItemModel>>
-TIP: 3 параметра
+ 
+**TIP**: 3 параметра
+
 TIP: асинхронность
-LTKM: https://developer.android.com/reference/android/os/AsyncTask.html
+
+**WKM**: [AsyncTask](https://developer.android.com/reference/android/os/AsyncTask.html)
 
 3. Инициализируем объекты, в билдере реквеста укажем URL c которого будем получать данные городов. 
 4. В теле метода doInBackground, который будет выполняться в отдельном потоке, создадим и выполним запрос к серверу. Далее узнаем успешно ли завершился наш запрос. Если да - то объект response будет содержать данные, извлечем их и приведем к строке. 
