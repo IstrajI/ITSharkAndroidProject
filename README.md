@@ -212,6 +212,7 @@
 11. Элемент списка теперь должен отображать картинку города - перейдем в `adapter_city_item` и изменим макет. `TextView` с описанием нам уже не понадобится, а вот для отображения картинки города необходим виджет `ImageView` (а еще лучше - его версия из `support` пакета). Что бы картинки хорошо смотрелись на любых экранах - будем использовать не фиксированные значения высоты и ширины, а зададим их через пропорции. В этом нам поможет `ConstraintLayout`, для виджетов находящихся в этом контейнере можно указать параметр соотношения `layout_constraintDimensionRatio`.
 
 **WKM**: [Support Library](https://developer.android.com/topic/libraries/support-library/index.html)
+
 **WKM**: [ConstraintLayout](https://developer.android.com/reference/android/support/constraint/ConstraintLayout.html) 
 
 12. Перейдем в сам адаптер. В методе по отрисовке айтема - `onBindViewHolder`, вызовем `Glide.with`, передавая методу контекст приложения, задаем урл изображения, и `ImageView` для отображения.
