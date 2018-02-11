@@ -34,33 +34,60 @@
 
 #### Часть 0
 
-**Основные понятия**: `Android Studio`, `SDK`, `AndroidManifest`, `Gradle Plugin`, base structure of android project.
+**Основные понятия**:
+`Android Studio`, `SDK`, `AndroidManifest`, `Gradle Plugin`, base structure of android project.
 
-**Задание**: В рамках данного задания требуется создать новый проект с одним экраном и xml-файлом разметкой для него.
+**Задание**:
+В рамках данного задания требуется создать новый проект с одним экраном и xml-файлом разметкой для него.
 
 Результат, который должен получиться: [GitHub](https://github.com/it-shark-pro/mobile-citymap-android/tree/part0)
 
 #### Часть 1
 
-**Основные понятия**: `Application`, `Activity`, `Fragment`, `Intent`, `Resources`, `XML`, `View` and `ViewGroup`, base layouts (`LinearLayout`, `FrameLayout`, `RelativeLayout`), base views (`TextView`, `ImageView`), `RecyclerView` and `Adapter` for it, base `Listeners` for view.
+**Основные понятия**: 
+`Application`, `Activity`, `Fragment`, `Intent`, `Resources`, `XML`, `View` and `ViewGroup`, base layouts (`LinearLayout`, `FrameLayout`, `RelativeLayout`), base views (`TextView`, `ImageView`), `RecyclerView` and `Adapter` for it, base `Listeners` for view.
 
-**Задание**: Данное задание требует создать список элементов (не более 10) с открытием экрана с детальным описанием после нажатия на конкретным элемент списка. Каждый элемент списка это объект класса с некоторым набором атрибутов и методов. Объекты класса как и сам список создаются программно в рамках приложения. Базовый объект класса должен содержать такие поля как `id`, `name` и `description`.
+**Задание**: 
+Данное задание требует создать список элементов (не более 10) с открытием экрана с детальным описанием после нажатия на конкретным элемент списка. Каждый элемент списка это объект класса с некоторым набором атрибутов и методов. Объекты класса как и сам список создаются программно в рамках приложения. Базовый объект класса должен содержать такие поля как `id`, `name` и `description`.
 
-**Дополнительно:** `ConstraintLayout` и `FlexBox`,  `ViewHolder pattern`, `ItemDecorator` for `RecyclerView`, `CustomView`
+**Дополнительно:** 
+`ConstraintLayout` и `FlexBox`,  `ViewHolder pattern`, `ItemDecorator` for `RecyclerView`, `CustomView`
 
 Результат, который должен получиться: [GitHub](https://github.com/it-shark-pro/mobile-citymap-android/tree/part1)
 
 #### Часть 2
 
-В рамках данного задания требуется провести модификацию приложения полученного в Часть 1 (Part 1) - заменить заданные вручную данные на полученные из сети в формате JSON.
+**Основные понятия**: `Threading`, `ThreadPool`, `AsyncTasks`, `Loaders`, `REST Api`, `Http Request`, `Json`, `Bitmap`, `Drawable`.
 
-Реализовать загрузку и отображение картинок (можно использовать сторонние библиотеки, к примеру Kingfisher) как для каждого элемента списка, так и в рамках экрана с детальным описанием.
+**Задание**: 
+В рамках данного задания требуется провести модификацию приложения полученного в **Часть 1** - заменить заданные вручную данные на полученные из сети в формате `JSON`. Реализовать загрузку и отображение картинок как для каждого элемента списка, так и в рамках экрана с детальным описанием. Приложение должно проверять наличие интернет соединения и сообщать о его отсутствии при попытке сделать запрос в сеть для загрузки данных. Для отображения картинок можно использовать одну из данных библиотек - `Picasso`/`Glide`.
 
-Приложение должно проверять наличие интернет соединения и сообщать о его отсутствии при попытке сделать запрос в сеть для загрузки данных.
+**JSON** - [https://api.myjson.com/bins/eug9h](https://api.myjson.com/bins/eug9h)
 
-Ресурс для получения данных: https://api.myjson.com/bins/7ybe5
+**Дополнительно**: `OkHttp`, `Retrofit`, `Gson`, `Jackson`, `RxJava`/`RxAndroid`, `VectorDrawable`
 
-Результат, который должен получиться: GitHub | Zip
+Результат, который должен получиться: [GitHub](https://github.com/it-shark-pro/mobile-citymap-android/tree/part2)
+
+
+#### Часть 3
+
+**Основные понятия**: `SharedPreferences`, `Files`, `SQLite`, `ORM databases`, `NoSQL databases`.
+
+**Задание**: В рамках данного задания требуется организовать работу с базой данных. Полученные данные в рамках **Часть 2** должны сохраняться в БД, а после, в ситуации с отсутствие интернет-соединения/ошибкой при загрузке данных из сети, доставаться из нее и отображаться пользователю.
+
+**Дополнительно**: `OrmLite`, `GreenDAO`, `Realm`, `ObjectBox`.
+
+Результат, который должен получиться: [GitHub](https://github.com/it-shark-pro/mobile-citymap-android/tree/part3)
+
+
+#### Часть 4
+**Основные понятия**: `Base of material design`, `Support AppCompat libs`, `Google Play Services` и `Firebase services`
+**Задание**: Преобразование приложения в рамках `Material design`, добавление в приложения `google map` и отображение на ней по полученным из `json` координатам изображений.
+
+
+Результат, который должен получиться: [GitHub](https://github.com/it-shark-pro/mobile-citymap-android/tree/part4)
+
+
 
 Part 0 and Part 1
 1. Создаем новый проект со стартовым экраном EmptyActivity.
